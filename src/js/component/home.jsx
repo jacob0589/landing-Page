@@ -35,12 +35,14 @@ const Home = () => {
 				<div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
 				{cardContent.map((item, index) => {
         return (
+			<div className= "d-flex"> 
           <Card
             title={item.title}
             content={item.content}
             
 			key={index}
           />
+		  </div>
         );
       })}
 			</div>
